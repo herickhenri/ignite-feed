@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+<div align="center">
+  <img src="public/logo.svg">
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> O projeto foi desenvolvido durante o curso de fundamentos do react realizado pela Rocketseat
 
-Currently, two official plugins are available:
+### O projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto consiste em um feed de posts onde o usuário pode interagir com aplausos e comentários.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+- [x] Criar um novo comentário
+- [x] Aplaudir um comentário existente
+- [x] Excluir um comentário pelo por você
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Verão mobile
+
+O site conta também com sua versão mobile totalmente responsiva
+
+## 💻 Pré-requisitos para executar o projeto em seu computador
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+- Você instalou a versão mais recente do `<nodejs / git>`
+- Você tem uma máquina `<Windows / Linux / Mac>`.
+
+## 🚀 Instalando o Ignite Feed
+
+Para instalar o Ignite Feed, siga estas etapas:
+
+Faça o clone no repositório na sua máquina:
+
+```
+git clone https://github.com/erickhenri/ignite-feed.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Faça a instalação das dependências:
+
+```
+npm install
+```
+
+## ☕ Usando Ignite Feed
+
+Para usar Ignite Feed, execute o código:
+
+```
+npm run dev
+```
