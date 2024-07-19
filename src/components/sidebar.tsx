@@ -1,16 +1,25 @@
 import { PencilSimpleLine } from "@phosphor-icons/react";
 import { Avatar } from "./avatar";
+import { User } from "../types/user";
 
-export function Sidebar() {
+interface SidebarProps {
+  user: User
+}
+
+export function Sidebar({ user }: SidebarProps) {
   return (
     <aside className="max-h-max rounded-lg overflow-hidden bg-gray-900">
-      <img src="https://picsum.photos/512/144" className="w-full h-20 object-cover"/>
+      {user.banner ? (
+        <img src={user.banner} className="w-full h-20 object-cover"/>
+      ) : (
+        <div className="w-full h-20 bg-gray-800"/>
+      )}
 
       <div className="-mt-7 mb-6 text-center flex flex-col items-center gap-4">
-        <Avatar src="https://avatars.githubusercontent.com/u/87100558?v=4" />
+        <Avatar src={user.perfilImage} />
         <div>
-          <strong className="text-gray-100 block">Erick Henrique</strong>
-          <span className="text-gray-500 text-sm">Front-end Development</span>
+          <strong className="text-gray-100 block">{user.name}</strong>
+          <span className="text-gray-500 text-sm">{user.rule}</span>
         </div>
 
         <div className="bg-gray-800 h-px w-full"/>
